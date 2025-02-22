@@ -1,9 +1,8 @@
 const path = require('path');
 const { app, BrowserWindow } = require('electron/main');
 
-
 const createWindow = () => {
-  const isDev = process.env.NODE_ENV !== 'production'
+  const isDev = process.env.NODE_ENV !== 'production';
 
   const win = new BrowserWindow({
     title: 'Image Ressizer',
