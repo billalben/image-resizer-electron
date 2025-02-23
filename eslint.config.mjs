@@ -13,6 +13,10 @@ export default [
       globals: {
         ...globals.browser, // Renderer process (browser)
         ...globals.node, // Main process (Node.js)
+        ipcRenderer: 'readonly', // globals explicitly
+        path: 'readonly',
+        os: 'readonly',
+        Toastify: 'readonly',
       },
     },
     ignores: ['**/*.config.mjs', '!**/eslint.config.mjs'],
